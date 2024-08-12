@@ -1,0 +1,14 @@
+C:\Users\fa1l7\source\repos\TestCRMExpert\TestCRMExpert\bin\Debug\net8.0\TestCRMExpert.exe
+C:\Users\fa1l7\source\repos\TestCRMExpert\TestCRMExpert\bin\Debug\net8.0\TestCRMExpert.deps.json
+C:\Users\fa1l7\source\repos\TestCRMExpert\TestCRMExpert\bin\Debug\net8.0\TestCRMExpert.runtimeconfig.json
+C:\Users\fa1l7\source\repos\TestCRMExpert\TestCRMExpert\bin\Debug\net8.0\TestCRMExpert.dll
+C:\Users\fa1l7\source\repos\TestCRMExpert\TestCRMExpert\bin\Debug\net8.0\TestCRMExpert.pdb
+C:\Users\fa1l7\source\repos\TestCRMExpert\TestCRMExpert\obj\Debug\net8.0\TestCRMExpert.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fa1l7\source\repos\TestCRMExpert\TestCRMExpert\obj\Debug\net8.0\TestCRMExpert.AssemblyInfoInputs.cache
+C:\Users\fa1l7\source\repos\TestCRMExpert\TestCRMExpert\obj\Debug\net8.0\TestCRMExpert.AssemblyInfo.cs
+C:\Users\fa1l7\source\repos\TestCRMExpert\TestCRMExpert\obj\Debug\net8.0\TestCRMExpert.csproj.CoreCompileInputs.cache
+C:\Users\fa1l7\source\repos\TestCRMExpert\TestCRMExpert\obj\Debug\net8.0\TestCRMExpert.dll
+C:\Users\fa1l7\source\repos\TestCRMExpert\TestCRMExpert\obj\Debug\net8.0\refint\TestCRMExpert.dll
+C:\Users\fa1l7\source\repos\TestCRMExpert\TestCRMExpert\obj\Debug\net8.0\TestCRMExpert.pdb
+C:\Users\fa1l7\source\repos\TestCRMExpert\TestCRMExpert\obj\Debug\net8.0\TestCRMExpert.genruntimeconfig.cache
+C:\Users\fa1l7\source\repos\TestCRMExpert\TestCRMExpert\obj\Debug\net8.0\ref\TestCRMExpert.dll
