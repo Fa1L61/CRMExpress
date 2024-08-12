@@ -1,0 +1,14 @@
+SELECT 
+    s.Surname,
+    s.Name,
+    SUM(sa.Quantity) AS TotalSales
+FROM 
+    Sellers s
+JOIN 
+    Sales sa ON s.ID = sa.IDSel
+WHERE 
+    sa.Date BETWEEN '2013-10-01' AND '2013-10-07'
+GROUP BY 
+    s.Surname, s.Name
+ORDER BY 
+    s.Surname, s.Name;

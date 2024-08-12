@@ -1,0 +1,53 @@
+WITH TotalSalesByProduct AS (
+    SELECT 
+        sa.IDProd,
+        SUM(sa.Quantity) AS TotalProductSales
+    FROM 
+        Sales sa
+    WHERE 
+        sa.Date BETWEEN '2013-10-01' AND '2013-10-07'
+    GROUP BY 
+        sa.IDProd
+),
+SalesWithinPeriod AS (
+    SELECT 
+        sa.IDProd,
+        sa.IDSel,
+        p.Name AS ProductName,
+        s.Surname,
+        s.Name AS SellerName,
+        sa.Quantity
+    FROM 
+        Sales sa
+    JOIN 
+        Products p ON sa.IDProd = p.ID
+    JOIN 
+        Sellers s ON sa.IDSel = s.ID
+    WHERE 
+        sa.Date BETWEEN '2013-10-01' AND '2013-10-07'
+),
+FilteredProducts AS (
+    SELECT 
+        IDProd
+    FROM 
+        Arrivals
+    WHERE 
+        Date BETWEEN '2013-09-07' AND '2013-10-07'
+    GROUP BY 
+        IDProd
+)
+SELECT 
+    sp.ProductName,
+    sp.Surname,
+    sp.SellerName,
+    (sp.Quantity / tsp.TotalProductSales) * 100 AS SalesPercentage
+FROM 
+    SalesWithinPeriod sp
+JOIN 
+    TotalSalesByProduct tsp ON sp.IDProd = tsp.IDProd
+JOIN 
+    FilteredProducts fp ON sp.IDProd = fp.IDProd
+ORDER BY 
+    sp.ProductName,
+    sp.Surname,
+    sp.SellerName;
